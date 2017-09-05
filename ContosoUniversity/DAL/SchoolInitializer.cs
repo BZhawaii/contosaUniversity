@@ -37,7 +37,7 @@ namespace ContosoUniversity.DAL
             new Course{CourseID=2042,Title="Literature",Credits=4,}
             };
 
-            courses.ForEach(s => context.Courses.Add(S));
+            courses.ForEach(s => context.Courses.Add(s));
             context.SaveChanges();
 
             var enrollments = new List<Enrollment>
